@@ -28,21 +28,22 @@ The overall Attestation process proceeds as follows:
 
 ## Build & Run
 
-### 1. Build OSv Realm
+### 1. Build OSv Realm & Run within a Realm
 Build the OSv image containing the `realm_server`.
-*(Example command - adjust based on your build system)*
+
 ```bash
 ./scripts/build -j4 image=realm_app
 
 ### 2. Run Realm Server
 Launch the Realm using QEMU with port forwarding enabled.
+Please check the main repository for detailed OSV and FVP environment setup instructions.
 
 ```bash
 # Example: Running QEMU with port forwarding (Host 8080 -> Guest 8080)
 ./scripts/run.py -n -f ... --forward "tcp:8080:8080"
 ```
 
-###3. Run Client
+### 2. Run Client
 Execute the client application on the host to request the token.
 
 ```bash
