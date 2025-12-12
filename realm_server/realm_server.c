@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <sys/socket.h>
-#include "cca_protocol.h"
+#include "attest_protocol.h"
 
 #define PORT 8080
 

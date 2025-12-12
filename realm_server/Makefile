@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99 -fPIC
+CFLAGS = -Wall -Wextra -std=c99 -fPIC -I../include
 TARGET = realm_server
 OBJS = realm_server.o 
 
